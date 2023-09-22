@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <label for="small">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <input type="radio" id="small" name="hmenu">
+    <input type="radio" id="close" name="hmenu">
+    <div class="menu">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">list1</a></li>
+            <li><a href="#">list2</a></li>
+            <li><a href="#">list3</a></li>
+            <li><a href="#">list4</a></li>
+        </ul>
+        <label for="close">&times;</label>
+    </div>
+    <div class="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/1.jpg" alt="1"></div>
+                <div class="swiper-slide"><img src="./images/2.jpg" alt="2"></div>
+                <div class="swiper-slide"><img src="./images/3.jpeg" alt="3"></div>
+                <div class="swiper-slide"><img src="./images/4.jpg" alt="4"></div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="./images/1.jpg" alt="1">
+            <h3>title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt suscipit consequatur laudantium, ipsa recusandae ea quasi pariatur, beatae, quis aperiam modi voluptate et illo. Voluptas beatae in provident dignissimos.</p>
+            <a href="#">more info</a>
+        </div>
+        <div class="product">
+            <img src="./images/1.jpg" alt="1">
+            <h3>title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt suscipit consequatur laudantium, ipsa recusandae ea quasi pariatur, beatae, quis aperiam modi voluptate et illo. Voluptas beatae in provident dignissimos.</p>
+            <a href="#">more info</a>
+        </div>
+        <div class="product">
+            <img src="./images/1.jpg" alt="1">
+            <h3>title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt suscipit consequatur laudantium, ipsa recusandae ea quasi pariatur, beatae, quis aperiam modi voluptate et illo. Voluptas beatae in provident dignissimos.</p>
+            <a href="#">more info</a>
+        </div>
+        <div class="product">
+            <img src="./images/1.jpg" alt="1">
+            <h3>title 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt suscipit consequatur laudantium, ipsa recusandae ea quasi pariatur, beatae, quis aperiam modi voluptate et illo. Voluptas beatae in provident dignissimos.</p>
+            <a href="#">more info</a>
+        </div>
+        
+    </div>
+<script src="./swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+</body>
+</html>
